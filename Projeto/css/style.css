@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap');
+
+table{
+    width: 700px;
+    margin: 0 auto;
+}
+
+table, td, th{
+    border: solid 1px #000;
+}
+
+#div-form{
+    text-align: center;
+}
+
+body{
+    background: linear-gradient(45deg, rgb(110, 110, 110), rgb(48, 48, 51));
+}
+
+form div {
+    margin: 20px;
+}
+
+form label{
+    display: block;
+    font-weight: bold;
+}
+
+header {
+	grid-area: header;
+}
+
+.menu {
+	grid-area: menu;
+}
+
+
+main {
+	grid-area: main;
+}
+
+footer {
+	grid-area: footer;
+}
+
+.container {
+    display: grid;
+    /* grid-template-columns: 30% 50% 20%; */
+    grid-template-rows: 10% 8% auto 10%;
+    grid-template-areas:
+        'header'
+        'menu'
+        'main'
+        'footer';
+    grid-gap: 10px;
+    height: 100%;
+    width: 98%;
+    margin: auto;
+}
+
+header, main, footer, .menu {
+    background: linear-gradient(45deg, rgb(255, 255, 255), rgb(255, 255, 255));
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    font-family: "Teko";
+}
+
+input, textarea, select{
+    width: 400px;
+    height: 35px;
+    border-radius: 5px;
+    font-family: "Teko";
+}
+
+textarea{
+    height: 150px;
+    font-family: "Teko";
+}
+
+button{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background: linear-gradient(45deg, rgb(110, 110, 110), rgb(114, 114, 116));
+    font-family: "Teko";
+}
+
+button:hover{
+    background-color: rgb(144, 144, 146);
+    cursor: pointer;
+    transition: all 0.8s;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+ul li{
+    margin: 5px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgb(129, 129, 129);
+}
+
+ul li:hover{
+    background-color: rgb(162, 158, 182);
+    cursor: pointer;
+    transition: all 0.8s;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+#btn-limpar-sessao{
+    margin: 30px auto;
+    background: linear-gradient(45deg, rgb(134, 134, 138)), rgb(99, 100, 100);
+    border-radius: 8px;
+    font-family: "Teko";
+    width: 100px;
+    display: table;
+    height: 35px;
+}
+
+img{
+    width: 250px;
+    padding-left: 600px;
+}
+
+#btn-limpar-sessao a{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.msg_cad_cont{
+    border: 1px solid rgb(58, 59, 61);
+    font-family: "Teko";
+    color:rgb(113, 114, 119);
+    margin: 10px, auto;
+    padding: 5px;
+}
